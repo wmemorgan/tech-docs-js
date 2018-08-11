@@ -1,0 +1,16 @@
+/* Roboto Slab & Roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans');
+
+body {
+  font-family: 'Open Sans', Helvetica, Sans-Serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: Roboto, Helvetica, Sans-Serif; 
+}
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 568px) {
+  
+}

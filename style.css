@@ -33,6 +33,11 @@ h1, h2, h3, h4, header {
   font-family: Roboto, Helvetica, Sans-Serif; 
 }
 
+.link-design {
+  color: var(--overlay-text-color);
+  text-decoration: none;
+}
+
 .container {
   display: grid;
   grid-template-columns: auto auto;
@@ -250,6 +255,10 @@ h1, h2, h3, h4, header {
   /*-----main-----*/
   .main {
     margin: 0 auto;
+  }
+
+  .main-section {
+    padding-top: 6rem;
   }
 
   /*-----footer-----*/

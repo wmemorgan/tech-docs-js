@@ -32,37 +32,79 @@ h1, h2, h3, h4, header {
 
 .container {
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: auto auto;
 }
 
-#navbar {
+.nav {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid var(--overlay-text-color);
-  border-bottom: 0;
+  background: var(--dark-primary-color);
 }
 
-#navbar header {
+.header {
   color: var(--emphasis-text-color);
   font-size: 1.5rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  color: var(--overlay-text-color);
+  background: var(--dark-primary-color);
   border-bottom: 0.5px solid var(--overlay-text-color);
-  padding: 1rem;
+}
+
+.doc-title {
+  font-size: 2rem;
+  padding: 0.5rem 0 0 1rem;
+}
+
+.menu-icon--small {
+  display: none;
+  font-size: 1.625rem;
+  padding: 1.25rem;
+}
+
+.menu-main {
+  display: grid;
+  grid-template-columns: 300px;
+  margin-top: 5rem;
+  padding: 0;
 }
 
 .nav-link {
   text-decoration: none;
-  color: var(--default-text-color);
-  border-bottom: 0.5px solid var(--overlay-text-color);
+  color: var(--overlay-text-color);
+  border: 0.5px solid var(--overlay-text-color);
+  padding: 1rem;
+}
+
+.main {
+  margin-top: 5rem;
   padding: 1rem;
 }
 
 
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 768px) {
+  .doc-title {
+    font-size: 1.75rem;
+  }
+
+  .menu-main {
+    display: none;
+  }
+
+  .menu-icon--small {display: block;}
 
 }
 
 @media only screen and (max-width: 568px) {
-
+  .doc-title {
+    font-size: 1.35rem;
+  }
 }

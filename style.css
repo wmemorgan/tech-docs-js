@@ -55,7 +55,7 @@ h1, h2, h3, h4, header {
   width: 100%;
   color: var(--overlay-text-color);
   background: var(--dark-primary-color);
-  border-bottom: 0.5px solid var(--overlay-text-color);
+  /* border-bottom: 0.5px solid var(--overlay-text-color); */
 }
 
 .doc-title {
@@ -72,19 +72,19 @@ h1, h2, h3, h4, header {
 .menu-main {
   display: grid;
   grid-template-columns: 300px;
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding: 0;
 }
 
 .nav-link {
   text-decoration: none;
   color: var(--overlay-text-color);
-  border: 0.5px solid var(--overlay-text-color);
+  /* border: 0.5px solid var(--overlay-text-color); */
   padding: 1rem;
 }
 
 .main {
-  margin-top: 5rem;
+  margin-top: 6rem;
   padding: 1rem;
 }
 

@@ -129,7 +129,7 @@ h1, h2, h3, h4, header {
 }
 
 #close-menu {
-  width: 250px;
+  width: 200px;
   color: var(--overlay-text-color);
   font-size: 2rem;
   text-align: right;
@@ -138,7 +138,7 @@ h1, h2, h3, h4, header {
 /*-----main-----*/
 .main {
   margin-left: 300px;
-  margin-right: -400px;
+  margin-right: -350px;
   padding: 1rem;
 }
 

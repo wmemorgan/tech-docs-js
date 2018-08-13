@@ -16,30 +16,35 @@
   <div class="container">
     <nav id="navbar" class="nav">
       <header class="header header__nav">
-        <h1 class="doc-title">Javascript Documentation</h1>
+        <h1 class="doc-title"><a href="/" class="link-design">Javascript Documentation</a></h1>
         <!-- Side Navigation Menu (for smaller screens) -->
         <div id="menu-icon--small">&#9776;</div>
       </header>
       <div class="menu-main">
-        <a href="#intro" class="nav-link">Introduction</a>
-        <a href="#what-you-should-know" class="nav-link">What you should already know</a>
-        <a href="#javascript-and-java" class="nav-link">Javascript and Java</a>
-        <a href="#hello-world" class="nav-link">Hello world</a>
-        <a href="#variables" class="nav-link">Variables</a>
-        <a href="#declaring-variables" class="nav-link">Declaring variables</a>
-        <a href="#variable-scope" class="nav-link">Variable scope</a>
-        <a href="#global-variables" class="nav-link">Global variables</a>
-        <a href="#constants" class="nav-link">Constants</a>
-        <a href="#data-types" class="nav-link">Data types</a>
-        <a href="#if-else" class="nav-link">if...else statement</a>
-        <a href="#while" class="nav-link">while statement</a>
-        <a href="#functions" class="nav-link">Function declarations</a>
-        <a href="#reference" class="nav-link">Reference</a>
+        <ul class="list">
+          <li class="list-item"><a href="#intro" class="nav-link">Introduction</a></li>
+          <li class="list-item"><a href="#what-you-should-know" class="nav-link">What you should already know</a></li>
+          <li class="list-item"><a href="#javascript-and-java" class="nav-link">Javascript and Java</a></li>
+          <li class="list-item"><a href="#hello-world" class="nav-link">Hello world</a></li>
+          <li class="list-item"><a href="#variables" class="nav-link">Variables</a></li>
+          <li class="list-item">
+            <a href="#declaring-variables" class="nav-link">Declaring variables</a>
+          </li>
+          <li class="list-item"><a href="#variable-scope" class="nav-link">Variable scope</a></li>
+          <li class="list-item"><a href="#global-variables" class="nav-link">Global variables</a></li>
+          <li class="list-item"><a href="#constants" class="nav-link">Constants</a></li>
+          <li class="list-item"><a href="#data-types" class="nav-link">Data types</a></li>
+          <li class="list-item"><a href="#if-else" class="nav-link">if...else statement</a></li>
+          <li class="list-item"><a href="#while" class="nav-link">while statement</a></li>
+          <li class="list-item"><a href="#functions" class="nav-link">Function declarations</a></li>
+          <li class="list-item"><a href="#reference" class="nav-link">Reference</a></li>
+        </ul>  
       </div>
 
     </nav>
     <div id="menu-side">
       <i id="close-menu" class="far fa-times-circle"></i>
+      <a href="/" class="nav-link">Home</a>
       <a href="#intro" class="nav-link">Introduction</a>
       <a href="#what-you-should-know" class="nav-link">What you should already know</a>
       <a href="#javascript-and-java" class="nav-link">Javascript and Java</a>
@@ -111,9 +116,21 @@
           interfaces. Variables, parameters, and function return types are not explicitly typed.
         </p>
       </section>
-      <section class="main-section" id="">
-        <header class="header header__section"></header>
-        <p></p>
+      <section class="main-section" id="hello-world">
+        <header class="header header__section">Hello World</header>
+        <p>
+           To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+        </p>
+        <code>
+           function greetMe(yourName) {
+             alert("Hello " + yourName); 
+          } 
+
+          greetMe("World");
+        </code>
+        <p>
+           Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+        </p>
       </section>
       <section class="main-section" id="">
         <header class="header header__section"></header>

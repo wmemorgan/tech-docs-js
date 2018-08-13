@@ -1,7 +1,7 @@
 /*-----Global variables-----*/
-const openMenuButton = document.getElementById('menu-icon--small')
-const closeMenuButton = document.getElementById('close-menu')
-const sideNavLink = document.getElementsByClassName('side-nav-link')
+const openSideMenuButton = document.getElementById('menu-icon--small')
+const closeSideMenuButton = document.getElementById('close-menu')
+const sideNavLink = document.getElementsByClassName('nav-link')
 
 /*-----Navigation functions-----*/
 const removeActiveClass = _ => {
@@ -32,18 +32,18 @@ for (let i = 0; i < document.getElementsByClassName('brand').length; i++) {
 
 
 /*-----Side navigation functions-----*/
-const openMenu = () => {
-  document.getElementById('menu-main').display = 'grid';
+const openSideMenu = () => {
+  document.getElementById('menu-side').style.width = '300px';
 }
 
-const closeMenu = () => {
-  document.getElementById('menu-main').display = 'none';
+const closeSideMenu = () => {
+  document.getElementById('menu-side').style.width = '0';
   removeActiveClass()
 }
 
-openMenuButton.addEventListener("click", openMenu);
-closeMenuButton.addEventListener("click", closeMenu);
+openSideMenuButton.addEventListener("click", openSideMenu);
+closeSideMenuButton.addEventListener("click", closeSideMenu);
 
 for (let i = 0; i < sideNavLink.length; i++) {
-  sideNavLink[i].addEventListener("click", closeMenu)
+  sideNavLink[i].addEventListener("click", closeSideMenu)
 }

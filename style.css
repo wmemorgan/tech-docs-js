@@ -66,7 +66,7 @@ h1, h2, h3, h4, header {
   padding: 0.5rem 0 0 1rem;
 }
 
-.menu-icon--small {
+#menu-icon--small {
   display: none;
   font-size: 1.625rem;
   padding: 1.25rem;
@@ -92,8 +92,21 @@ h1, h2, h3, h4, header {
   color: var(--dark-primary-color);
 }
 
-/*-----main-----*/
+#menu-side {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--dark-primary-color);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: ease-in 0.5s;
+}
 
+/*-----main-----*/
 .main {
   margin-top: 6rem;
   padding: 1rem;
@@ -207,7 +220,7 @@ h1, h2, h3, h4, header {
     display: none;
   }
 
-  .menu-icon--small {display: block;}
+  #menu-icon--small {display: block;}
 
   /*-----footer-----*/
   .footer {

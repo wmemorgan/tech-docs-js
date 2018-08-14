@@ -99,7 +99,7 @@ h1, h2, h3, h4, header {
   padding: 1rem;
 }
 
-.nav-link {
+.nav-link, .side-nav-link {
   width: 100%;
   text-decoration: none;
   color: var(--overlay-text-color);

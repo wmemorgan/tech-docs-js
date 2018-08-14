@@ -1,5 +1,5 @@
 /* Roboto Slab & Roboto */
-@import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700|Open+Sans:300,400,500,600,700');
 /*--Basic color scheme--*/
 :root {
   --dark-primary-color: #022140;
@@ -109,8 +109,9 @@ h1, h2, h3, h4, header {
 
 .menu-main a:hover, .menu-main a:active,
 .nav-link.active {
-  background: var(--overlay-text-color);
+  background: var(--light-primary-color);
   color: var(--dark-primary-color);
+  border-radius: 5px;
 }
 
 #menu-side {

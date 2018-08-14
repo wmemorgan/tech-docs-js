@@ -1,7 +1,7 @@
 /*-----Global variables-----*/
 const openSideMenuButton = document.getElementById('menu-icon--small')
 const closeSideMenuButton = document.getElementById('close-menu')
-const sideNavLink = document.getElementsByClassName('nav-link')
+const sideNavLink = document.getElementsByClassName('side-nav-link')
 
 /*-----Navigation functions-----*/
 const removeActiveClass = _ => {
@@ -15,7 +15,6 @@ const activeSelection = (item) => {
     if (document.querySelector(`.active`)) {
       removeActiveClass()
     }
-
     item.classList.add('active')
   }
 }
@@ -24,12 +23,6 @@ for (let i = 0; i < document.getElementsByClassName('nav-link').length; i++) {
   let element = document.getElementsByClassName('nav-link')[i]
   element.addEventListener("click", activeSelection(element))
 }
-
-for (let i = 0; i < document.getElementsByClassName('brand').length; i++) {
-  let element = document.getElementsByClassName('brand')[i]
-  element.addEventListener("click", removeActiveClass)
-}
-
 
 /*-----Side navigation functions-----*/
 const openSideMenu = () => {
